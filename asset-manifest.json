@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/apoorva-rajan/static/css/main.ea4c2ad5.css",
-    "main.js": "/apoorva-rajan/static/js/main.92d3ea85.js",
+    "main.js": "/apoorva-rajan/static/js/main.1fb78a6e.js",
     "static/js/787.04b59ce6.chunk.js": "/apoorva-rajan/static/js/787.04b59ce6.chunk.js",
     "index.html": "/apoorva-rajan/index.html",
     "main.ea4c2ad5.css.map": "/apoorva-rajan/static/css/main.ea4c2ad5.css.map",
-    "main.92d3ea85.js.map": "/apoorva-rajan/static/js/main.92d3ea85.js.map",
+    "main.1fb78a6e.js.map": "/apoorva-rajan/static/js/main.1fb78a6e.js.map",
     "787.04b59ce6.chunk.js.map": "/apoorva-rajan/static/js/787.04b59ce6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea4c2ad5.css",
-    "static/js/main.92d3ea85.js"
+    "static/js/main.1fb78a6e.js"
   ]
 }
