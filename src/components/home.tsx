@@ -159,7 +159,7 @@ const Home = (props:any) =>{
                         </div>
                     </div>
                     <div className="photo-wrap">
-                        <img className="photo" height="250em" src="../headshot.png"/>
+                        <img className="photo" height="250em" src="./headshot.png"/>
                     </div>
                 </div>
                 <div className="about-me">
