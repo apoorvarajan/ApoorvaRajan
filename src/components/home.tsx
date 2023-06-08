@@ -48,6 +48,10 @@ const Home = (props:any) =>{
         {
             "tag":"Contact",
             "refFunc":() => myRef4.current.scrollIntoView({block: "start", behavior: "smooth"})
+        },
+        {
+            "tag":"Leave me a message",
+            "refFunc":()=>setPage(true)
         }]
     const social_icons = [
         "https://email.com/in/jaketrent",
@@ -155,43 +159,43 @@ const Home = (props:any) =>{
                         </div>
                     </div>
                     <div className="photo-wrap">
-                        <img className="photo" height="250em" src="./media/headshot.png"/>
+                        <img className="photo" height="250em" src="../headshot.png"/>
                     </div>
                 </div>
                 <div className="about-me">
                     About me section TBD
                 </div>
-                {emailPage?<div className="email-wrap">
-                        <div className="close-icon" onClick={()=>setPage(false)}>
-                            Close
-                        </div>
-                        <div className="email-input-wrap">
-                            <div className="email-elem">
-                                <label htmlFor="emailName" >Name:</label>
-                                <input ref={email_name} id="emailName" className="email-input"/>
+                {emailPage?
+                <div className="modal-popup">
+                    <div className="email-wrap">
+                            <div className="close-icon" onClick={()=>setPage(false)}>
+                                Close
+                            </div>
+                            <div className="email-input-wrap">
+                                <div className="email-elem">
+                                    <label htmlFor="emailName" >Name:</label>
+                                    <input ref={email_name} id="emailName" className="email-input"/>
+                                </div>
+                                <div className="email-elem">
+                                    <label htmlFor="emailid">Your Email id:</label>
+                                    <input ref={email_id} id="emailid" className="email-input"/>
+                                </div>
                             </div>
                             <div className="email-elem">
-                                <label htmlFor="emailid">Your Email id:</label>
-                                <input ref={email_id} id="emailid" className="email-input"/>
+                                <label htmlFor="body">Mail Body</label>
+                                <textarea ref={email_body} id="body" className="email-textarea"/>
                             </div>
-                        </div>
-                        <div className="email-elem">
-                            <label htmlFor="body">Mail Body</label>
-                            <textarea ref={email_body} id="body" className="email-textarea"/>
-                        </div>
-                        <div>
-                            <button className="send-button" onClick={()=>sendEmail(email_name,email_id,email_body)}>Send</button>
+                            <div>
+                                <button className="send-button" onClick={()=>sendEmail(email_name,email_id,email_body)}>Send</button>
+                            </div>
                         </div>
                     </div>:null}
-                <div className="send-email-button-wrap" onClick={()=>setPage(!emailPage)}>
-                    <div>
-                        {emailPage?"Close":"Send me an email"}
-                    </div>
-                    <div className="email-up-down">
-                        {emailPage?<VscChevronUp/>:<VscChevronDown/>}
-                    </div>
+                    {/* <div className="send-email-button-wrap" onClick={()=>setPage(!emailPage)}>
+                        <div>
+                            {emailPage?"Close":"Send me a message"}
+                        </div>
+                    </div> */}
                 </div>
-            </div>
             <div className="details-wrap">
                 <div className="skills subsec">
                     <div className="head">

@@ -274,12 +274,14 @@
     }
   }
   .email-wrap{
+    height: 30em;
+    width: 40em;
     margin: 2em auto;
     border: 0.1em solid black;
     display: flex;
     padding: 3em;
     flex-direction: column;
-    font-size: 1.5em;
+    font-size: 1.2em;
     /* justify-content: space-evenly; */
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
     background: gray;
@@ -301,12 +303,12 @@
     border: none;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 0em 3em;
-    font-size: 0.6em;
+    /* font-size: 0.6em; */
   }
   .email-textarea{
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     line-height: 1.5em;
-    height: 30em;
+    height: 20em;
     border: 1px solid black;
     padding: 1em;
     margin: 1em 0em;
@@ -343,4 +345,12 @@
     font-size: 1.5em;
     color: black;
     cursor: pointer;
+  }
+  .modal-popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 3em;
   }
