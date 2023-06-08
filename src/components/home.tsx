@@ -5,6 +5,7 @@ import {HiBriefcase, HiAcademicCap} from "react-icons/hi"
 import {FaProjectDiagram} from "react-icons/fa"
 import emailjs from '@emailjs/browser';
 var { SocialIcon } = require('react-social-icons');
+
 const Home = (props:any) =>{
     const [emailPage,setPage]=useState(false)
     const myRef0:any = useRef(null)
@@ -159,7 +160,7 @@ const Home = (props:any) =>{
                         </div>
                     </div>
                     <div className="photo-wrap">
-                        <img className="photo" height="250em" src="../../headshot.png"/>
+                        <img className="photo" height="250em" src="/apoorva-rajan/headshot.png"/>
                     </div>
                 </div>
                 <div className="about-me">
