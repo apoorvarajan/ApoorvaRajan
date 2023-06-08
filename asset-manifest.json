@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ApoorvaRajan/apoorvarajan/static/css/main.ea4c2ad5.css",
-    "main.js": "/ApoorvaRajan/apoorvarajan/static/js/main.97d6bb79.js",
-    "static/js/787.04b59ce6.chunk.js": "/ApoorvaRajan/apoorvarajan/static/js/787.04b59ce6.chunk.js",
-    "index.html": "/ApoorvaRajan/apoorvarajan/index.html",
-    "main.ea4c2ad5.css.map": "/ApoorvaRajan/apoorvarajan/static/css/main.ea4c2ad5.css.map",
-    "main.97d6bb79.js.map": "/ApoorvaRajan/apoorvarajan/static/js/main.97d6bb79.js.map",
-    "787.04b59ce6.chunk.js.map": "/ApoorvaRajan/apoorvarajan/static/js/787.04b59ce6.chunk.js.map"
+    "main.css": "/ApoorvaRajan/static/css/main.ea4c2ad5.css",
+    "main.js": "/ApoorvaRajan/static/js/main.47e51ad9.js",
+    "static/js/787.04b59ce6.chunk.js": "/ApoorvaRajan/static/js/787.04b59ce6.chunk.js",
+    "index.html": "/ApoorvaRajan/index.html",
+    "main.ea4c2ad5.css.map": "/ApoorvaRajan/static/css/main.ea4c2ad5.css.map",
+    "main.47e51ad9.js.map": "/ApoorvaRajan/static/js/main.47e51ad9.js.map",
+    "787.04b59ce6.chunk.js.map": "/ApoorvaRajan/static/js/787.04b59ce6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea4c2ad5.css",
-    "static/js/main.97d6bb79.js"
+    "static/js/main.47e51ad9.js"
   ]
 }
