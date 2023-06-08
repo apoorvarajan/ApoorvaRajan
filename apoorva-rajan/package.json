@@ -1,8 +1,8 @@
 {
   "name": "apoorva-rajan",
   "version": "0.1.0",
-  "homepage": "https://apoorvarajan.github.io/",
-  "private": true,
+  "homepage": "https://apoorvarajan.github.io/ApoorvaRajan",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-free": "^6.4.0",
