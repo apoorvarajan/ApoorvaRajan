@@ -1,7 +1,7 @@
 {
   "name": "apoorva-rajan",
   "version": "0.1.0",
-  "homepage": "https://apoorvarajan.github.io/ApoorvaRajan",
+  "homepage": "https://github.com/apoorvarajan/ApoorvaRajan/tree/main/apoorva-rajan",
   "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
