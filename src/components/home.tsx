@@ -55,9 +55,9 @@ const Home = (props:any) =>{
             "refFunc":()=>setPage(true)
         }]
     const social_icons = [
-        "https://email.com/in/jaketrent",
-        "https://linkedin.com/in/jaketrent",
-        "https://github.com/in/jaketrent"
+        "mailto:apoorvarajan1997@gmail.com",
+        "https://www.linkedin.com/in/apoorva-rajan/",
+        "https://github.com/apoorvarajan"
     ]
     const skills = {
         "Technical Skills":{
