@@ -358,7 +358,7 @@ const Home = (props:any) =>{
                         })}
                     </div>
                     </div>
-                    <div className="subsec" ref={myRef6}>
+                    <div className="subsec" ref={myRef7}>
                         <div className="head">
                             {"Online Course and Certifications"}
                             <div className="line"/>
