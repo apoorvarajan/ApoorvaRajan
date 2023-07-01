@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react'
 import '../style/home.css'
 import { VscChevronDown, VscFolderOpened, VscChevronRight, VscChromeClose, VscChevronUp } from "react-icons/vsc"
+import { MdOpenInNew } from 'react-icons/md';
 import {HiBriefcase, HiAcademicCap} from "react-icons/hi"
-import {FaProjectDiagram} from "react-icons/fa"
+import {FaProjectDiagram, FaTrophy} from "react-icons/fa"
 import emailjs from '@emailjs/browser';
 var { SocialIcon } = require('react-social-icons');
 
@@ -13,6 +14,9 @@ const Home = (props:any) =>{
     const myRef2:any = useRef(null)
     const myRef3:any = useRef(null)
     const myRef4:any = useRef(null)
+    const myRef5:any = useRef(null)
+    const myRef6:any = useRef(null)
+    const myRef7:any = useRef(null)
     const email_name:any = useRef(null);
     const email_id:any = useRef(null);
     const email_body:any = useRef(null);
@@ -35,6 +39,10 @@ const Home = (props:any) =>{
             "refFunc":() => myRef0.current.scrollIntoView({block: "start", behavior: "smooth"})
         },
         {
+            "tag":"Skills",
+            "refFunc":() => myRef5.current.scrollIntoView({block: "start", behavior: "smooth"})
+        },
+        {
             "tag":"Experience",
             "refFunc":() => myRef1.current.scrollIntoView({block: "start", behavior: "smooth"})
         },
@@ -45,6 +53,14 @@ const Home = (props:any) =>{
         {
             "tag":"Education",
             "refFunc":() => myRef3.current.scrollIntoView({block: "start", behavior: "smooth"})
+        },
+        {
+            "tag":"Achievements",
+            "refFunc":() => myRef6.current.scrollIntoView({block: "start", behavior: "smooth"})
+        },
+        {
+            "tag":"Online Courses",
+            "refFunc":() => myRef7.current.scrollIntoView({block: "start", behavior: "smooth"})
         },
         {
             "tag":"Contact",
@@ -128,6 +144,45 @@ const Home = (props:any) =>{
             "ref":myRef3
         }
     }
+    const Achievements = [
+        {
+            "title":"Trailblazer Award",
+            "doc":"../documents/trailblazer_Redbus.jpeg",
+            "time":"Quarter 2, 2021-2022"
+        },
+        {
+            "title":"Titans of Quarter 3",
+            "doc":"../documents/titans_Redbus.jpeg",
+            "time":"Quarter 3, 2019-2020"
+        }
+    ]
+    const Online_Courses = [
+        {
+            "Provider":"Stanford|Online, Coursera",
+            "CourseName":"Machine Learning",
+            "Certificate":"../documents/stanford_ml.jpg"
+        },
+        {
+            "Provider":"Binx.io and Xebia Academy",
+            "CourseName":"GCP Big Data & ML Fndamentals",
+            "Certificate":"../documents/gcp-bigdataml-fundamentals-certificate.jpg"
+        },
+        {
+            "Provider":"Udemy",
+            "CourseName":"Python for Data Science and Machine Learning Bootcamp",
+            "Certificate":"../documents/python_ml_dl_datascience.jpeg"
+        },
+        {
+            "Provider":"Udemy",
+            "CourseName":"Scala and Spark for Big Data and Machine Learning",
+            "Certificate":"../documents/SparkScala_Course_Certificate.jpg"
+        },
+        {
+            "Provider":"Udemy",
+            "CourseName":"Progressive Web Apps (PWA) - The Complete Course Guide",
+            "Certificate":"../documents/PWA-UDEMY-CERTIFICATE.jpg"
+        }
+    ]
     return <div className="home-container" ref={myRef0}>
             <div id='stars'></div>
             <div id='stars2'></div>
@@ -148,7 +203,7 @@ const Home = (props:any) =>{
                         </div>
                         <div className="cur-status">
                             <div>
-                                MS in CS at UMass Amherst | Software Engineer | Career Developer with CICS Careers
+                                MS in CS at UMass Amherst | Software Engineer | <a target="_blank" className="anchor_cd" href="https://www.cics.umass.edu/people/apoorva-rajan" > Career Developer with CICS Careers <MdOpenInNew /> </a>
                             </div>
                         </div>
                         <div className="contact" ref={myRef4}>
@@ -164,7 +219,14 @@ const Home = (props:any) =>{
                     </div>
                 </div>
                 <div className="about-me">
-                    About me section TBD
+                <div>Hey there! Great to have you here! I'm Apoorva, a tech enthusiast on a mission to unravel the mysteries of technology.</div>
+                    After working three years as Software Engineer in the field, I am currently pursuing Mater's in Computer Science.
+                    Learning, for me, knows no limits. It's a lifelong adventure that goes beyond the classroom. 
+                    I'm always eager to apply my growing expertise, collaborate with like-minded folks, and make a positive impact in the tech world.
+                    I believe that great software is not just about code; it's about understanding the needs of users and crafting solutions that enhance their lives. 
+                    I'm passionate about creating meaningful experiences through elegant designs, seamless functionality, and scalable solutions.
+                    So, whether you have a challenging project in mind or simply want to geek out about the latest tech trends, I'm here for it!
+                    Looking forward to embarking on this exciting journey with you!
                 </div>
                 {emailPage?
                 <div className="modal-popup">
@@ -198,7 +260,7 @@ const Home = (props:any) =>{
                     </div> */}
                 </div>
             <div className="details-wrap">
-                <div className="skills subsec">
+                <div className="skills subsec" ref={myRef5}>
                     <div className="head">
                         SKILLS
                         <div className="line"/>
@@ -257,6 +319,84 @@ const Home = (props:any) =>{
                     </div>
                     </div>
                 })}
+                <div className="subsec" ref={myRef6}>
+                        <div className="head">
+                            {"Achievements"}
+                            <div className="line"/>
+                        </div>
+                        <div className="exp-list ach">
+                        {Achievements.map((item,key2)=>{
+                            return <div>
+                                    <div>
+                                        <div className="exp-icon-wrap">
+                                            <FaTrophy/>
+                                        </div>
+                                        {key2<Achievements.length-1 &&<div className="vertical-line"></div>}
+                                    </div>
+                                    <div className="ach-div">
+                                        <div className="role">
+                                            {item.title}
+                                            <span style={{float: 'right',color: 'black',fontWeight: 'normal'}}>{item.time}</span>
+                                        </div>
+                                        <div className="view-button" onClick={()=>{
+                                            let elem = document.getElementById("cert_"+key2)
+                                            if(elem){
+                                                if(elem.style.display=='block'){
+                                                    elem.style.display='none'
+                                                }
+                                                else{
+                                                    elem.style.display='block'
+                                                }
+                                            }
+                                        }}>
+                                            VIEW CERTIFICATE
+                                        </div>
+                                        {/* <embed src={item.doc} width="800px" height="2100px" /> */}
+                                        <img src={item.doc} width="500em" id={"cert_"+key2} hidden/>
+                                    </div>
+                                </div>
+                        })}
+                    </div>
+                    </div>
+                    <div className="subsec" ref={myRef6}>
+                        <div className="head">
+                            {"Online Course and Certifications"}
+                            <div className="line"/>
+                        </div>
+                    <div className="exp-list ach">
+                        {Online_Courses.map((item,key2)=>{
+                            return <div>
+                                    <div>
+                                        <div className="exp-icon-wrap">
+                                            <FaTrophy/>
+                                        </div>
+                                        {key2<Online_Courses.length-1 &&<div className="vertical-line"></div>}
+                                    </div>
+                                    <div className="ach-div">
+                                        <div className="role">
+                                            {item.CourseName}
+                                            <span style={{float: 'right',color: 'black',fontWeight: 'normal'}}>{item.Provider}</span>
+                                        </div>
+                                        <div className="view-button" onClick={()=>{
+                                            let elem = document.getElementById("course_"+key2)
+                                            if(elem){
+                                                if(elem.style.display=='block'){
+                                                    elem.style.display='none'
+                                                }
+                                                else{
+                                                    elem.style.display='block'
+                                                }
+                                            }
+                                        }}>
+                                            VIEW CERTIFICATE
+                                        </div>
+                                        {/* <embed src={item.Certificate} width="800px" height="2100px" /> */}
+                                        <img src={item.Certificate} width="500em" id={"course_"+key2} hidden/>
+                                    </div>
+                                </div>
+                        })}
+                    </div>
+                    </div>
             </div>
             </div>
         </div>
