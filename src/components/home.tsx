@@ -87,44 +87,61 @@ const Home = (props:any) =>{
     }
     const work_Exp = [
         {
-            "role":"Senior Software Engineer at redBus, Ibibo Group Pvt. Ltd.",
-            "desc":"My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript. Collaborated with multiple teams and gained knowledge and experience in various technologies. Been part of Browser and Beyond Webinar . As well, I have frequently taken on tasks that are additional to my expected duties."
+            "role":"Senior Software Engineer",
+            "company":"at redBus,Ibibo Group Pvt. Ltd",
+            "desc":[],
+            "time":"Jan 2022 - July 2022"
         },
         {
-            "role":"Software Engineer at redBus, Ibibo Group Pvt. Ltd.",
-            "desc":"My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript. Collaborated with multiple teams and gained knowledge and experience in various technologies. Been part of Browser and Beyond Webinar . As well, I have frequently taken on tasks that are additional to my expected duties."
+            "role":"Software Engineer",
+            "company":"at redBus,Ibibo Group Pvt. Ltd",
+            "desc":["My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript.Collaborated with multiple teams and gained knowledge and experience in various technologies.Been part of Browser and Beyond Webinar .As well, I have frequently taken on tasks that are additional to my expected duties."],
+            "time":"Aug 2019 - Jan 2022"
         },
         {
-            "role":"Trainee Technology at Publicis Sapient",
-            "desc":"Contributed to the development of the Customer Data Platform, acquiring experience and knowledge in Apache Spark, Scala, and a range of Google Cloud Platform products."
+            "role":"Trainee Technology",
+            "company":"at Publicis Sapient",
+            "desc":["Contributed to the development of the Customer Data Platform, acquiring experience and knowledge in Apache Spark, Scala, and a range of Google Cloud Platform products."],
+            "time":"May 2018 - July 2018"
         }
     ]
     const proj = [
         {
             "role":"Clustering and Analysis of Negative Reviews",
-            "desc":"My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript. Collaborated with multiple teams and gained knowledge and experience in various technologies. Been part of Browser and Beyond Webinar . As well, I have frequently taken on tasks that are additional to my expected duties."
+            "desc":["Employed PySpark and SparkNLP to cluster and categorize negative Amazon reviews into product and service issues, resulting in the discovery that over 30% of negative reviews were related to service issues."],
+            "link":"https://github.com/apoorvarajan/negativeReviewAnalysis"
         },
         {
             "role":"BETTER App -- IARPA",
-            "desc":"My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript. Collaborated with multiple teams and gained knowledge and experience in various technologies. Been part of Browser and Beyond Webinar . As well, I have frequently taken on tasks that are additional to my expected duties."
+            "desc":["Implemented a search web application using React, Redux, Typescript, CSS, HTML to enable analysts to efficiently search and explore entity relationships of events in a cross-lingual event and argument retrieval model"],
+            "link":"https://github.com/apoorvarajan/better_app_CIIR"
         },
         {
-            "role":"Colorizaiton and Holographic Projection of forensic sketches",
-            "desc":"Contributed to the development of the Customer Data Platform, acquiring experience and knowledge in Apache Spark, Scala, and a range of Google Cloud Platform products."
+            "role":"Colorization and Holographic Projection of forensic sketches",
+            "desc":["Built a Convolutional Neural Network (CNN) Model for colorization and holographic representation of forensic sketches using TensorFlow and TFLearn libraries aimed to improve forensic sketch analysis",
+            "The model utilizes batch normalization and dropout regularization techniques to generate colored images with 0.7 accuracy and projected them using a hologram leveraging image processing techniques with Python"],
+            "link":"https://github.com/apoorvarajan/s8-colorization_and_holographic-representation-of-forensic-sketches."
         },
         {
             "role":"Stock Price Visualization Website",
-            "desc":"Contributed to the development of the Customer Data Platform, acquiring experience and knowledge in Apache Spark, Scala, and a range of Google Cloud Platform products."
+            "desc":["Devised and Implemented an interactive stock price visualization website using Flask, Python, Pandas, Numpy, Seaborn, Matplotlib and HTML on around 25,00,000 stock data."],
+            "link":""
         }
     ]
     const edu = [
         {
             "role":"Master of Science in Computer Science at the University of Massachusetts Amherst",
-            "desc":"My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript. Collaborated with multiple teams and gained knowledge and experience in various technologies. Been part of Browser and Beyond Webinar . As well, I have frequently taken on tasks that are additional to my expected duties."
+            "desc":["Relevant Courses: Applied Information Retrieval, Machine Learning, Distributed and Operating Systems, Advanced Algorithms, Systems for Data Science",
+                    "Web and Social Media Team Head of Voices of Data Science (Sep 2022 - April 2023)",
+                    "Career Developer with Manning College of Information & Computer Science Careers (Jan 2023 - Present)",
+                    "Software Developer at Center for Intelligent Information Retrieval (Jan 2023 - Mar 2023)",
+                    "Research Assistant at College of Nursing (June 2023 - Present)"]
         },
         {
             "role":"Bachelor of Technology in Computer Science and Engineering from Model Engineering College, A.P.J Abdul Kalam Technological University",
-            "desc":"My responsibilities included the development and enhancements of redBus mobile website for multiple countries, in particular Peru and Colombia, lusing the MERN stack in Typescript. Collaborated with multiple teams and gained knowledge and experience in various technologies. Been part of Browser and Beyond Webinar . As well, I have frequently taken on tasks that are additional to my expected duties."
+            "desc":["Relevant Courses: Data Structures, Machine Learning, Cloud Computing, Data Mining and Warehousing, Object Oriented Design and Programming, Principles of Database Design",
+                    "IEEE Computer Society Coordinator (2017 - 2018)",
+                    "Social Initiative Event Coordinator of Excel 2018"]
         }
     ]
     const exp_section = {
@@ -298,21 +315,45 @@ const Home = (props:any) =>{
                             <div className="line"/>
                         </div>
                         <div className="exp-list">
-                        {value.content.map((item2,key2)=>{
-                            return <div>
+                        {value.content.map((item2:any,key2:any)=>{
+                            return <div className="wrap-exp" onClick={()=>{
+                                        let elem = document.getElementById("desc_"+key+key2)
+                                        if(item2.role=="Senior Software Engineer"){
+                                            elem= document.getElementById("desc_"+key+(key2+1))
+                                        }
+                                        if(elem){
+                                            if(elem.style.display=='block'){
+                                                elem.style.display='none'
+                                            }
+                                            else{
+                                                elem.style.display='block'
+                                            }
+                                        }
+                                    }}>
                                     <div>
                                         <div className="exp-icon-wrap">
                                             {value.icon}
                                         </div>
                                         {key2<value.content.length-1 &&<div className="vertical-line"></div>}
                                     </div>
-                                    <div>
+                                    <div className="ach-div">
                                         <div className="role">
-                                            {item2.role}
+                                            {item2.link? <a target="_blank" className="anchor_cd" href={item2.link}>{item2.role}<MdOpenInNew /></a>:item2.role}
+                                            {item2.time?<span style={{float: 'right',color: 'black',fontWeight: 'normal'}}>{item2.time}</span>:null}
                                         </div>
-                                        <div className="role-desc">
-                                            {item2.desc}
+                                        {item2.company?<div className="company-name">{item2.company}</div>:null}
+                                        <div style={{minHeight:"2em"}}>
+                                            <ul   className="expand-sec" id={"desc_"+key+key2} style={{display:'none'}}>
+                                                {item2.desc.map((descitem:any,desckey:any)=>{
+                                                    return <li>
+                                                                <div className="role-desc">
+                                                                    {descitem}
+                                                                </div>
+                                                            </li>
+                                                })}
+                                            </ul>
                                         </div>
+
                                     </div>
                                 </div>
                         })}

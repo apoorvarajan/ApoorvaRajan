@@ -15,6 +15,16 @@
           width: 100%;
       }
   }
+  @keyframes expanding {
+    from {
+      opacity: 0;
+      transform: translateY(-30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   @keyframes slide-in {
     from {
       opacity: 0;
@@ -168,6 +178,7 @@
 }
 .exp-list>div{
     display: inline-flex;
+    width: 100%;
 }
 .vertical-line{
     background: black;
@@ -185,11 +196,11 @@
     padding-top: 0.5em;
 }
 .role-desc{
-  padding: 1em;
+  padding: 0.2em;
   /* height: 5em; */
   overflow: hidden;
   color: black;
-  margin: 1em;
+  /* margin: 1em; */
   font-size: 1.1em;
 }
 .skill-title{
@@ -362,6 +373,8 @@
   }
   .anchor_cd{
     display: flex;
+    text-decoration: inherit;
+    color: inherit;
   }
   .ach{
     display: flex;
@@ -378,4 +391,18 @@
   }
   .ach-div{
     width: 100%;
+  }
+  .company-name{
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  .expand-sec{
+    animation: expanding 2s ease-out 0s 1 normal forwards ;
+    /* transition: height 3s ease-out; */
+  }
+  .wrap-exp:hover{
+    cursor: pointer;
+  }
+  .view-button:hover{
+    cursor: pointer;
   }
