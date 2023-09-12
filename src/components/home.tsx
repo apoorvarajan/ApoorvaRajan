@@ -87,6 +87,18 @@ const Home = (props:any) =>{
     }
     const work_Exp = [
         {
+            "role":"Graduate Research Assistant",
+            "company":"at Manning College of Information and Computer Science (University of Massachusetts Amherst)",
+            "desc":["Designed and Implemented a search web application using React, Redux, Typescript, CSS, HTML to enable analysts to efficiently search and explore entity relationships of events in a cross-lingual event and argument retrieval model","Demonstrated the project’s capabilities in a live presentation at IARPA’s Better Demo Day."],
+            "time":"Jan 2023 - Mar 2023"
+        },
+        {
+            "role":"Graduate Research Assistant",
+            "company":"at Elaine Marieb College of Nursing (University of Massachusetts Amherst)",
+            "desc":["Designed and implemented a WordPress-based web toolkit for the Elaine Marieb College of Nursing, enabling Doctor of Nursing Practice (DNP) students to culturally adapt Cognitive Behavioral Therapy (CBT) and Motivational Interviewing techniques."],
+            "time":"Jun 2023 - Aug 2023"
+        },
+        {
             "role":"Senior Software Engineer",
             "company":"at redBus,Ibibo Group Pvt. Ltd",
             "desc":[],
@@ -103,6 +115,12 @@ const Home = (props:any) =>{
             "company":"at Publicis Sapient",
             "desc":["Contributed to the development of the Customer Data Platform, acquiring experience and knowledge in Apache Spark, Scala, and a range of Google Cloud Platform products."],
             "time":"May 2018 - July 2018"
+        },
+        {
+            "role":"Career Developer",
+            "company":"at Manning College of Information and Computer Science (University of Massachusetts Amherst)",
+            "desc":["Assisting fellow students in their pursuit of a career by furnishing them with valuable resources and services to facilitate career planning, guiding them through career strategies, and assisting them in exploring a wide range of career opportunities."],
+            "time":"Jun 2023 - Present"
         }
     ]
     const proj = [
@@ -123,9 +141,9 @@ const Home = (props:any) =>{
             "link":"https://github.com/apoorvarajan/s8-colorization_and_holographic-representation-of-forensic-sketches."
         },
         {
-            "role":"Stock Price Visualization Website",
-            "desc":["Devised and Implemented an interactive stock price visualization website using Flask, Python, Pandas, Numpy, Seaborn, Matplotlib and HTML on around 25,00,000 stock data."],
-            "link":""
+            "role":"Stock Price Analysis and Prediction using LSTM",
+            "desc":["Analyzed and predicted future stock prices of tech companies using LSTM with an accuracy of 93.2% by implementing an LSTM model and visualizing the predictions to identify trends in the data."],
+            "link":"https://github.com/apoorvarajan/StockPricePrediction"
         }
     ]
     const edu = [
