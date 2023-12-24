@@ -125,6 +125,18 @@ const Home = (props:any) =>{
     ]
     const proj = [
         {
+            "role":"Reinforcement Learning Algorithms Implementation on MDP Environments",
+            "desc":["Executed the Reinforce with Baseline and Actor-Critic algorithms on OpenAI's Cartpole and Acrobot Markov Decision Processes (MDPs) using Python, torch, and OpenAI Gym.",
+            "Oversaw model learning through hyperparameter tuning and generated visual representations of the learning process differences using Matplotlib."],
+            "link":"https://github.com/apoorvarajan/RLAlgos_on_MDPs"
+        },
+        {
+            "role":"Student Data Management System",
+            "desc":["Developed a comprehensive Student Data Management Platform to streamline and automate the storage, retrieval, and update of student information using React, Typescript, python, gRPC, HTML, and CSS.",
+            "Implemented a user-friendly interface for the students to efficiently manage their personal and academic details and plan their academic coursework based on degree requirements."],
+            "link":"https://github.com/apoorvarajan/StudentDataManagementSystem"
+        },
+        {
             "role":"Clustering and Analysis of Negative Reviews",
             "desc":["Employed PySpark and SparkNLP to cluster and categorize negative Amazon reviews into product and service issues, resulting in the discovery that over 30% of negative reviews were related to service issues."],
             "link":"https://github.com/apoorvarajan/negativeReviewAnalysis"
@@ -149,7 +161,8 @@ const Home = (props:any) =>{
     const edu = [
         {
             "role":"Master of Science in Computer Science at the University of Massachusetts Amherst",
-            "desc":["Relevant Courses: Applied Information Retrieval, Machine Learning, Distributed and Operating Systems, Advanced Algorithms, Systems for Data Science",
+            "desc":["CGPA:3.53/4",
+                    "Relevant Courses: Applied Information Retrieval, Machine Learning, Distributed and Operating Systems, Advanced Algorithms, Systems for Data Science, Reinforcement Learning, Theory & Practice of Software Engineering",
                     "Web and Social Media Team Head of Voices of Data Science (Sep 2022 - April 2023)",
                     "Career Developer with Manning College of Information & Computer Science Careers (Jan 2023 - Present)",
                     "Software Developer at Center for Intelligent Information Retrieval (Jan 2023 - Mar 2023)",
@@ -157,7 +170,8 @@ const Home = (props:any) =>{
         },
         {
             "role":"Bachelor of Technology in Computer Science and Engineering from Model Engineering College, A.P.J Abdul Kalam Technological University",
-            "desc":["Relevant Courses: Data Structures, Machine Learning, Cloud Computing, Data Mining and Warehousing, Object Oriented Design and Programming, Principles of Database Design",
+            "desc":["CGPA:7.78/10",
+                    "Relevant Courses: Data Structures, Machine Learning, Cloud Computing, Data Mining and Warehousing, Object Oriented Design and Programming, Principles of Database Design",
                     "IEEE Computer Society Coordinator (2017 - 2018)",
                     "Social Initiative Event Coordinator of Excel 2018"]
         }
