@@ -22,9 +22,11 @@ class PlayGround extends React.Component<any,any> {
             let w = parseInt(yesElem.style.width)
             let h = parseInt(yesElem.style.height)
             let l = parseInt(yesText.style.lineHeight)
+            let f = parseInt(yesText.style.fontSize)
             yesElem.style.width=w+1+'em'
             yesElem.style.height=h+1+'em'
             yesText.style.lineHeight=l+1+'em'
+            yesText.style.fontSize=f+1+'em'
             this.setState({
                 cntNo:cntNo+1,
                 noText:cntNo<15 ? countMap[cntNo+1] : countMap[15]
