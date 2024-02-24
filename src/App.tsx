@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/home'
 import PlayGround from './components/playground/playgroundMain'
-import { Routes, Route, createHashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -13,10 +13,12 @@ function App() {
     },[]);
   return (
     <div className="App">
+      <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/playground" element={<PlayGround />} />
       </Routes>
+      </HashRouter>
     </div>
   );
 }
