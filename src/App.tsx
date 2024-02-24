@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <HashRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/playground" element={<PlayGround />} />
+        <Route path="/" Component={Home} />
+        <Route path="/playground" Component={PlayGround} />
       </Routes>
       </HashRouter>
     </div>
