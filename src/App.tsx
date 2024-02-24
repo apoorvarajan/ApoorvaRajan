@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/home'
 import PlayGround from './components/playground/playgroundMain'
-import { Routes, Route, Navigate, Link, NavLink } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
   useEffect(() => {
