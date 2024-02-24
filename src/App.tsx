@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <HashRouter>
       <Routes>
-        <Route path="/" Component={Home} />
         <Route path="/playground" Component={PlayGround} />
+        <Route path="/" Component={Home} />
       </Routes>
       </HashRouter>
     </div>
