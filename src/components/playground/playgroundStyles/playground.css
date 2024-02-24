@@ -1,0 +1,44 @@
+.playground-wrap{
+    text-align: center;
+    height: 100%;
+}
+.valentine-button{
+    background: pink;
+    width: 10em;
+    margin: 10em auto;
+    display: flex;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.val-q{
+    font-weight: bold;
+    color: red;
+    font-size: 2em;
+    margin: 1em;
+}
+.ans-wrap{
+    display: inline-flex;
+}
+.ans-wrap div{
+    
+}
+.no-class{
+    background: red;
+    margin: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    padding: 0.5em 1em;
+}
+.yes-class{
+    background: green;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.yes-text{
+    margin: auto;
+}
