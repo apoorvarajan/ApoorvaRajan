@@ -13,12 +13,13 @@ function App() {
     },[]);
   return (
     <div className="App">
-      <HashRouter>
+      {/* <HashRouter>
       <Routes>
         <Route path="/playground" Component={PlayGround} />
         <Route path="/" Component={Home} />
       </Routes>
-      </HashRouter>
+      </HashRouter> */}
+      {window.location.hash=="#playground" ? <PlayGround/> : <Home/>}
     </div>
   );
 }
