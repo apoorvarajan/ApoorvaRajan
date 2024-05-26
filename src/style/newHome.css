@@ -1,0 +1,31 @@
+@-webkit-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-moz-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-o-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@keyframes Coolgradient { 
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+.home-wrap{
+    text-align: center;
+    /* background: rgb(0,163,255); */
+    /* height: 50em; */
+    background: linear-gradient(338deg, rgba(0,163,255,0.7861519607843137) 0%, rgba(40,154,113,1) 84%);
+    background-size: 1000% 1000%;
+    -webkit-animation: Coolgradient 10s linear infinite;
+    -moz-animation: Coolgradient 10s linear infinite;
+    -o-animation: Coolgradient 10s linear infinite;
+    animation: Coolgradient 10s linear infinite;
+}
