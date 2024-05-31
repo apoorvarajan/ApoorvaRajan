@@ -1,0 +1,12 @@
+.techskill-class{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
+}
+.skill-list{
+    padding: 0.4em 2em;
+}
+.skill-title{
+    font-weight: bold;
+}

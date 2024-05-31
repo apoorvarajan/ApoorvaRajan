@@ -1,0 +1,179 @@
+    { 
+        "Technical Skills":{
+            "Languages":["JavaScript", "TypeScript", "Python", "Scala", "SQL", "HTML5", "CSS"],
+            "Frameworks":["ReactJS", "Apache Spark", "Redux", "Node.js", "Express.js", "gRPC"],
+            "Libraries":["NumPy", "pandas", "matplotlib", "Scikit-learn", "OpenAI gym", "Chart.js", "Fluent UI", "EJS"],
+            "Tools":["REST APIs", "Git", "Webpack", "Storybook JS", "ELK", "Postman", "Google Looker Studio", "npm"],
+            "Cloud Technologies":["OpenAI API", "Azure Health Bot", "Azure Language Studio", "GCP BigQuery"],
+            "Databases":["PostgreSQL", "MongoDB"],
+            "OS":["macOS","Windows","Linux"]
+        },
+        "Soft Skills":{},
+        "work_Exp" : [
+            {
+                "role":"Software Design Engineer Intern",
+                "company":"at Microsoft",
+                "desc":[
+                    "Designed and developed a copilot chatbot application for patients aimed at increasing clinical trials participation",
+                    "Utilized Fluent UI, React, TypeScript, SCSS, Figma, and npm to design and create customizable web componentsfor a user-friendly interface through personalized conversations",
+                    "Integrated Azure services like Azure Health Bot and Language Studio, along with OpenAI and ClinicalTrials APIs, to improve chatbot responsiveness to patient inquiries",
+                    "Engaged in discussions with medical professionals and presented to representatives from the National Institute of Health to understand user needs and identify potential improvements from medical and patient viewpoints"
+                ],
+                "time":"Jan 2024 - Feb 2024"
+            },
+            {
+                "role":"Graduate Research Assistant",
+                "company":"at the Center for Intelligent Information Retrieval (University of Massachusetts Amherst)",
+                "desc":[
+                    "Developed a cross-lingual event and argument retrieval model search web application, utilizing React, TypeScript, HTML, SCSS, react-force-graph, npm",
+                    "Demonstrated the project’s capabilities in a live presentation at IARPA’s Better Demo Day."
+                ],
+                "time":"Jan 2023 - Mar 2023"
+            },
+            {
+                "role":"Graduate Research Assistant",
+                "company":"at Elaine Marieb College of Nursing (University of Massachusetts Amherst)",
+                "desc":[
+                    "Designed and implemented a WordPress-based web toolkit for the Elaine Marieb College of Nursing, enabling Doctor of Nursing Practice (DNP) students to culturally adapt Cognitive Behavioral Therapy (CBT) and Motivational Interviewing techniques."
+                ],
+                "time":"Jun 2023 - Aug 2023"
+            },
+            {
+                "role":"Career Developer",
+                "company":"at Manning College of Information and Computer Science (University of Massachusetts Amherst)",
+                "desc":[
+                    "Assisted fellow students in their pursuit of a career by furnishing them with valuable resources and services to facilitate career planning, guiding them through career strategies, and assisting them in exploring a wide range of career opportunities",
+                    "Developed 'Destination Report' a career outcomes reporting of the computer science interns and graduates from UMass Amherst using HTML, CSS, Javascript and Chart.js",
+                    "Analyzed and visualized student and career data in Google Looker Studio and provided valuable insights about career trends"
+                ],
+                "time":"Jun 2023 - May 2024"
+            },
+            {
+                "role":"Senior Software Engineer",
+                "company":"at redBus,Ibibo Group Pvt. Ltd",
+                "desc":[],
+                "time":"Jan 2022 - July 2022"
+            },
+            {
+                "role":"Software Engineer",
+                "company":"at redBus,Ibibo Group Pvt. Ltd",
+                "desc":[
+                    "Owned the mobile web development and enhancements for the bus ticketing platform across multiple countries collaborating closely with product managers and UX teams practicing agile methodologies",
+                    "Enhanced the Colombia website domain ranking by 192% by improving the core web vitals and through performance profiling to optimize front end performance of the website",
+                    "Created reusable responsive UI components in the in-house-built component library reducing development efforts by 30% and enhancing scalability",
+                    "Implemented offline tracking capability for poor network areas using Progressive Web Application technology",
+                    "Managed client and server logs in Elastic Logstash Kibana, analyzing, identifying and debugging browser errors",
+                    "Coordinated with cross-functional teams to develop the ’VaxAlert’ portal, successfully notifying users of available COVID-19 vaccine slots at nearby vaccination centres, resulting in approximately 80,000 user registrations",
+                    "Honored with the Trailblazer Award for impactful contributions to mobile front-end development and Titans of the Quarter Award for collaborative excellence with the India team",
+                    "Skills: ReactJS, Redux, TypeScript, JavaScript, EJS, HTML5, CSS, NodeJS, Express JS, webpack, Storybook.js, npm, MongoDB, REST APIs,Canvas, Web APIs"
+                ],
+                "time":"Aug 2019 - Jan 2022"
+            },
+            {
+                "role":"Data Engineer Intern",
+                "company":"at Publicis Sapient",
+                "desc":[
+                    "Contributed to the development of a Customer Data Platform allowing businesses to gain valuable insights about customer behavior, preferences and interactions using data processing frameworks and cloud technologies",
+                    "Transformed raw batch and real time data to actionable insights using Apache Spark, SQL, Scala and GCP"
+                ],
+                "time":"May 2018 - July 2018"
+            }
+    ],
+    "proj": [
+        {
+            "role":"Reinforcement Learning Algorithms Implementation on MDP Environments",
+            "desc":["Executed the Reinforce with Baseline and Actor-Critic algorithms on OpenAI's Cartpole and Acrobot Markov Decision Processes (MDPs) using Python, torch, and OpenAI Gym.",
+            "Oversaw model learning through hyperparameter tuning and generated visual representations of the learning process differences using Matplotlib."],
+            "link":"https://github.com/apoorvarajan/RLAlgos_on_MDPs"
+        },
+        {
+            "role":"Student Data Management System",
+            "desc":["Developed a comprehensive Student Data Management Platform to streamline and automate the storage, retrieval, and update of student information using React, Typescript, python, gRPC, HTML, and CSS.",
+            "Implemented a user-friendly interface for the students to efficiently manage their personal and academic details and plan their academic coursework based on degree requirements."],
+            "link":"https://github.com/apoorvarajan/StudentDataManagementSystem"
+        },
+        {
+            "role":"Clustering and Analysis of Negative Reviews",
+            "desc":["Employed PySpark and SparkNLP to cluster and categorize negative Amazon reviews into product and service issues, resulting in the discovery that over 30% of negative reviews were related to service issues."],
+            "link":"https://github.com/apoorvarajan/negativeReviewAnalysis"
+        },
+        {
+            "role":"BETTER App -- IARPA",
+            "desc":["Implemented a search web application using React, Redux, Typescript, CSS, HTML to enable analysts to efficiently search and explore entity relationships of events in a cross-lingual event and argument retrieval model"],
+            "link":"https://github.com/apoorvarajan/better_app_CIIR"
+        },
+        {
+            "role":"Colorization and Holographic Projection of forensic sketches",
+            "desc":["Built a Convolutional Neural Network (CNN) Model for colorization and holographic representation of forensic sketches using TensorFlow and TFLearn libraries aimed to improve forensic sketch analysis",
+            "The model utilizes batch normalization and dropout regularization techniques to generate colored images with 0.7 accuracy and projected them using a hologram leveraging image processing techniques with Python"],
+            "link":"https://github.com/apoorvarajan/s8-colorization_and_holographic-representation-of-forensic-sketches."
+        },
+        {
+            "role":"Stock Price Analysis and Prediction using LSTM",
+            "desc":["Analyzed and predicted future stock prices of tech companies using LSTM with an accuracy of 93.2% by implementing an LSTM model and visualizing the predictions to identify trends in the data."],
+            "link":"https://github.com/apoorvarajan/StockPricePrediction"
+        }
+    ],
+    "edu" : [
+        {
+            "role":"Master of Science in Computer Science at the University of Massachusetts Amherst",
+            "desc":["CGPA:3.5/4",
+                    "Relevant Courses: Database Design and Implementation, Applied Information Retrieval, Machine Learning, Distributed and Operating Systems, Advanced Algorithms, Systems for Data Science, Reinforcement Learning, Theory & Practice of Software Engineering",
+                    "Web and Social Media Team Head of Voices of Data Science (Sep 2022 - April 2023)",
+                    "Career Developer with Manning College of Information & Computer Science Careers (Jan 2023 - May 2024)",
+                    "Research Assistant at Center for Intelligent Information Retrieval (Jan 2023 - Mar 2023)",
+                    "Research Assistant at College of Nursing (June 2023 - Aug 2023)"]
+        },
+        {
+            "role":"Bachelor of Technology in Computer Science and Engineering from Model Engineering College, A.P.J Abdul Kalam Technological University",
+            "desc":["CGPA:7.78/10",
+                    "Relevant Courses: Data Structures, Machine Learning, Cloud Computing, Data Mining and Warehousing, Object Oriented Design and Programming, Principles of Database Design",
+                    "IEEE Computer Society Coordinator (2017 - 2018)",
+                    "Social Initiative Event Coordinator of Excel 2018"]
+        }
+    ],
+    "Achievements" : [
+        {
+            "title":"Student Leader",
+            "doc":"../documents/student_leader.jpg",
+            "time":"April 2024"
+        },
+        {
+            "title":"Trailblazer Award",
+            "doc":"../documents/trailblazer_Redbus.jpeg",
+            "time":"Quarter 2, 2021-2022"
+        },
+        {
+            "title":"Titans of Quarter 3",
+            "doc":"../documents/titans_Redbus.jpeg",
+            "time":"Quarter 3, 2019-2020"
+        }
+    ],
+    "Online_Courses" : [
+        {
+            "Provider":"Stanford|Online, Coursera",
+            "CourseName":"Machine Learning",
+            "Certificate":"../documents/stanford_ml.jpg"
+        },
+        {
+            "Provider":"Binx.io and Xebia Academy",
+            "CourseName":"GCP Big Data & ML Fndamentals",
+            "Certificate":"../documents/gcp-bigdataml-fundamentals-certificate.jpg"
+        },
+        {
+            "Provider":"Udemy",
+            "CourseName":"Python for Data Science and Machine Learning Bootcamp",
+            "Certificate":"../documents/python_ml_dl_datascience.jpeg"
+        },
+        {
+            "Provider":"Udemy",
+            "CourseName":"Scala and Spark for Big Data and Machine Learning",
+            "Certificate":"../documents/SparkScala_Course_Certificate.jpg"
+        },
+        {
+            "Provider":"Udemy",
+            "CourseName":"Progressive Web Apps (PWA) - The Complete Course Guide",
+            "Certificate":"../documents/PWA-UDEMY-CERTIFICATE.jpg"
+        }
+    ]
+}
